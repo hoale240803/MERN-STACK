@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vue Admin Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/Vuexy.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="vue__website">
+      <!-- ===== SIDEBAR ===== -->
+
+      <div class="vue__block vue__sidebar">
+        <div class="vue__logo bg-info">vue__logo</div>
+        <div class="dashboard__option">
+          <div class="list-group">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action active vue__btn"
+              >Active item</a
+            >
+          </div>
+        </div>
+        <div class="dashboard__option">
+          <div class="list-group">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action vue__btn"
+              id="first__item"
+            >
+              <div class="vue__icon__text">
+                <div class="vue__btn__icon"><i class="fab fa-bitcoin"></i></div>
+                <div class="vue__btn__text">Dashboard</div>
+              </div>
+              <div class="vue__btn__arrow">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </a>
+            <a
+              href="#"
+              class="
+                list-group-item list-group-item-action
+                vue__btn vue__btn__hide
+              "
+              id="second__item"
+            >
+              <div class="vue__icon__text">
+                <div class="vue__btn__icon">icon</div>
+                <div class="vue__btn__text">text</div>
+              </div>
+              <div class="vue__btn__arrow">arrow</div>
+            </a>
+            <a href="" class="vue__box vue__btn"> box </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="block__right">
+        <!-- NAVBAR -->
+        <div class="vue__block vue__navbar">navbar</div>
+        <div class="con__sub__ord">
+          <!-- ===== CONGRATULATION ===== -->
+
+          <div class="vue__block vue__congratulation">congratulation</div>
+          <!-- ===== SUBCRIBERS ===== -->
+
+          <div class="vue__block vue__subcribers">subcribers</div>
+          <!-- ===== ORDERS ===== -->
+
+          <div class="vue__block vue__orders">orders</div>
+        </div>
+        <div class="ave__sup">
+          <!-- ===== AVERAGE SESSION ===== -->
+
+          <div class="vue__block vue__session">average session</div>
+          <!-- ===== SUPPORT TRACKER ===== -->
+          <div class="vue__block vue__support__tracker">support tracker</div>
+        </div>
+        <div class="user__sale__app">
+          <div class="vue__block vue__user__timeline">user timeline</div>
+          <div class="vue__block vue__sales">sales</div>
+          <div class="vue__block vue__app__design">app design</div>
+        </div>
+        <div class="vue__block vue__user__table">users table</div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#first__item").on("click", function () {
+          $("#second__item").slideToggle(200);
+        });
+      });
+    </script>
+  </body>
+</html>

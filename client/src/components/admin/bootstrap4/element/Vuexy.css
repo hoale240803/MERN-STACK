@@ -29,7 +29,6 @@
   flex-direction: row;
   flex-grow: 1;
   max-height: 250px;
-  z-index: -1;
 }
 .vue__congratulation {
   display: flex;
@@ -48,13 +47,11 @@
   flex-grow: 1;
 }
 
-/* AVERAGE SUPPORT */
 .ave__sup {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   max-height: 450px;
-  z-index: -1;
 }
 .vue__session {
   display: flex;
@@ -69,13 +66,11 @@
   max-height: 500px;
 }
 
-/* ===== USER SALE APPS =====*/
 .user__sale__app {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   height: 480px;
-  z-index: -1;
 }
 .vue__user__timeline {
   display: flex;
@@ -92,7 +87,6 @@
   flex-direction: row;
   flex-grow: 1;
 }
-/* ===== USER TABLE =====*/
 .vue__user__table {
   display: flex;
   flex-direction: column;
@@ -161,9 +155,12 @@
   transform: translateY(10px);
   transition: all 1s;
 }
-.card {
-  width: 100%;
+
+/* ===== TABLE =====*/
+.table {
+  display: inline-table !important;
 }
-.table-responsive {
-  display: inline-table;
+.vue__navbar {
+  width: 100%;
+  z-index: 100;
 }
