@@ -13,10 +13,10 @@
   margin-right: 10px;
 }
 .vue__block {
-  background: gray;
   margin: 10px;
   text-align: center;
   line-height: 75px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .block__right {
   display: flex;
@@ -117,7 +117,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid tomato;
 }
 .dashboard__option {
   display: flex;
@@ -132,6 +131,9 @@
   height: 50px;
   width: 240px;
   margin: 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .apps__pages {
   margin-top: 150px;
@@ -139,10 +141,7 @@
 .vue__icon__text {
   display: flex;
   justify-content: space-between;
-  background: chartreuse;
-}
-.vue__btn__arrow {
-  background: chocolate;
+  color: white;
 }
 
 .vue__btn__text {
@@ -166,4 +165,90 @@
 }
 .table-responsive {
   display: inline-table;
+}
+.vue__logo__img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+.logo__name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.far.fa-dot-circle {
+  color: white;
+  font-size: 19px;
+  margin-right: 5px;
+}
+
+/* ===== BUTTON CSS =====*/
+.vue__icon__text__btn__arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  transition: transform 0.25s ease;
+}
+.vue__icon__text__btn__arrow:hover {
+  transform: translateX(5px);
+}
+.vue__btn {
+  background: #06beb6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #48b1bf,
+    #06beb6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #48b1bf,
+    #06beb6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  box-shadow: #06beb6 0px 5px 15px;
+  border: none;
+}
+.vue__noti__number {
+  height: 20px;
+  width: 20px;
+  background: orange;
+  margin-right: 5px;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  text-align: center;
+  line-height: -5px;
+}
+.vue__btn__arrow {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.vue__btn__icon {
+  font-size: 13px;
+  margin-left: 3px;
+}
+.vue__btn__text {
+  font-size: 17px;
+  font-weight: 400;
+}
+.vue__btn__icon__home {
+  font-size: 17px;
+  margin-left: 0px;
+}
+.vue__btn__text__home {
+  font-size: 23px;
+}
+.vue__noti__text {
+  border-radius: 3px;
+  background: tomato;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  margin: 0 1rem;
 }
