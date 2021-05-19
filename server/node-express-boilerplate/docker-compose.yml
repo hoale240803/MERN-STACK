@@ -3,9 +3,9 @@ version: '3'
 services:
   node-app:
     build: .
-    image: node-app
+    image: node-app-full-function
     environment:
-      - MONGODB_URL=mongodb://localhost:27017/node-boilerplate
+      - MONGODB_URL=mongodb://mongodb:27017/node-boilerplate
     ports:
       - '5000:5000'
     depends_on:
@@ -16,7 +16,7 @@ services:
       - node-network
 
   mongodb:
-    image: mongo:4.2.1-bionic
+    image: mongo
     ports:
       - '27017:27017'
     volumes:
